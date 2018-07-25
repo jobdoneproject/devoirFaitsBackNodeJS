@@ -1,0 +1,122 @@
+{
+  "name": "etablissement",
+  "plural": "etablissements",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "codeEtablissement": {
+      "type": "string",
+      "required": true
+    },
+    "appellationOfficielle": {
+      "type": "string",
+      "required": true
+    },
+    "denominationPrincipale": {
+      "type": "string",
+      "required": true
+    },
+    "patronymeUAI": {
+      "type": "string",
+      "required": true
+    },
+    "secteur": {
+      "type": "string",
+      "required": true
+    },
+    "adresse": {
+      "type": "string",
+      "required": true
+    },
+    "lieuDit": {
+      "type": "string"
+    },
+    "boitePostale": {
+      "type": "string"
+    },
+    "codePostal": {
+      "type": "string",
+      "required": true
+    },
+    "localiteAcheminement": {
+      "type": "string",
+      "required": true
+    },
+    "coordonneeX": {
+      "type": "number",
+      "required": true
+    },
+    "coordonneeY": {
+      "type": "number",
+      "required": true
+    },
+    "longitude": {
+      "type": "number",
+      "required": true
+    },
+    "qualiteAppariement": {
+      "type": "string",
+      "required": true
+    },
+    "localisation": {
+      "type": "string",
+      "required": true,
+      "default": "codeNature"
+    },
+    "codeNature": {
+      "type": "string",
+      "required": true
+    },
+    "nature": {
+      "type": "string",
+      "required": true
+    },
+    "codeEtatEtablissement": {
+      "type": "string",
+      "required": true
+    },
+    "etatEtablissement": {
+      "type": "string",
+      "required": true
+    },
+    "codeDepartement": {
+      "type": "string",
+      "required": true
+    },
+    "codeRegion": {
+      "type": "string",
+      "required": true
+    },
+    "codeAcademie": {
+      "type": "string",
+      "required": true
+    },
+    "codeCommune": {
+      "type": "string",
+      "required": true
+    },
+    "departement": {
+      "type": "string",
+      "required": true
+    },
+    "region": {
+      "type": "string",
+      "required": true
+    },
+    "academie": {
+      "type": "string",
+      "required": true
+    },
+    "commune": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

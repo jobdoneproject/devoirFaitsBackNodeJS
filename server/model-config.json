@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "message": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "utilisateur": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "classe": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "etablissement": {
+    "dataSource": "etablissementREST",
+    "public": true
+  },
+  "salle": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "creneau": {
+    "dataSource": "jobDone",
+    "public": true
+  }
+}

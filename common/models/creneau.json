@@ -1,0 +1,23 @@
+{
+  "name": "creneau",
+  "plural": "creneaux",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateDebut": {
+      "type": "date",
+      "required": true
+    },
+    "dateFin": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

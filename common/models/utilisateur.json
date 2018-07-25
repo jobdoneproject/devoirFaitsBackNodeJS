@@ -1,0 +1,43 @@
+{
+  "name": "utilisateur",
+  "plural": "utilisateurs",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "prenom": {
+      "type": "string",
+      "required": true
+    },
+    "mail": {
+      "type": "string",
+      "required": true
+    },
+    "disponible": {
+      "type": "boolean",
+      "required": true
+    },
+    "actif": {
+      "type": "boolean",
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

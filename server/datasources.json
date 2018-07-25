@@ -1,0 +1,21 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "jobDone": {
+    "host": "ds145881.mlab.com",
+    "port": 45881,
+    "database": "jobdone",
+    "password": "USERDBPWD13",
+    "name": "jobDone",
+    "user": "USERDB",
+    "connector": "mongodb"
+  },
+  "etablissementREST": {
+    "name": "etablissementREST",
+    "baseURL": "https://data.education.gouv.fr/api/records/1.0/search/?dataset=fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre&facet=numero_uai&facet=appellation_officielle&facet=secteur_public_prive_libe&facet=code_postal_uai&facet=localite_acheminement_uai&facet=nature_uai&facet=nature_uai_libe&facet=etat_etablissement&facet=code_departement&facet=code_region&facet=code_academie",
+    "crud": true,
+    "connector": "rest"
+  }
+}
