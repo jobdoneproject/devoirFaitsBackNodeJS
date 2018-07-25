@@ -12,4 +12,4 @@ L'api est versionnée.
 * Sur explorer, cliquer sur Etablissement. 
 * Cliquer sur /etablissement du GET
 * Cliquer sur 'Try it out' un peu plus bas.
-La liste des établissement s'affiche dans le response Body (Non stocké en base mais appel dynamique d'une API et intégration avec Devoirs Faits)
+La liste des établissements s'affiche dans le response Body (Non stocké en base mais appel dynamique d'une API et intégration avec Devoirs Faits)
