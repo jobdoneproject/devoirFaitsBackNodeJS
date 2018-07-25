@@ -12,10 +12,20 @@ L'api est versionnée.
 * Sur explorer, cliquer sur Etablissement. 
 * Cliquer sur /etablissement du GET
 * Cliquer sur 'Try it out' un peu plus bas.
-La liste des établissements s'affiche dans le response Body (Non stocké en base mais appel dynamique d'une API et intégration avec Devoirs Faits)
+* S'affiche :
 
+        {
+        "error": {
+            "statusCode": 401,
+            "name": "Error",
+            "message": "Autorisation requise",
+            "code": "AUTHORIZATION_REQUIRED",
+            "stack": "Error: Autorisation requise\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/loopback/lib/application.js:430:21\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/loopback/lib/model.js:358:7\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/loopback/common/models/acl.js:529:16\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/async/dist/async.js:3888:9\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/async/dist/async.js:1064:13)\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/async/dist/async.js:969:16\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/async/dist/async.js:3885:13\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/loopback/common/models/acl.js:511:17\n    at /Volumes/Data/Projects/WebStormProjects/devoirsFaits/node_modules/loopback/common/models/role.js:434:21\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)"
+        }
+        }
+        
+L'api est bloquée pour les utilisateurs non authentifiés.
 
-Pour tester plus:
 
 * Cliquer sur Utilisateur:
 * puis POST Utilisateurs Login
@@ -34,9 +44,16 @@ Reponse Body doit afficher quelquechose comme:
             "created": "2018-07-25T11:30:05.603Z",
             "userId": "5b5858aeab947e0c133a0a55"
         }
-* Copier l'ID 
+* Copier l'ID sans les "" 
 * Coller l'id dans la zone en haut à droite de la page (accessToken)
 * Cliquer sur Set Access Token
 * Les requêtes peuvent se faire maintenant en mode authentifié.
+* Par exemple : 
+
+GET Etablissements
+
+La liste des établissements s'affiche dans le response Body (Non stocké en base mais appel dynamique d'une API et intégration avec Devoirs Faits)
+
+
             
     
