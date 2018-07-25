@@ -36,7 +36,7 @@ Reponse Body doit afficher quelquechose comme:
         }
 * Copier l'ID 
 * Coller l'id dans la zone en haut à droite de la page (accessToken)
-* Cliquer sur SEt Access Token
+* Cliquer sur Set Access Token
 * Les requêtes peuvent se faire maintenant en mode authentifié.
             
     
