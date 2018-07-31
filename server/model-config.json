@@ -55,16 +55,24 @@
     "dataSource": "jobDone",
     "public": true
   },
-  "etablissement": {
-    "dataSource": "etablissementREST",
-    "public": true
-  },
   "salle": {
     "dataSource": "jobDone",
     "public": true
   },
   "creneau": {
     "dataSource": "jobDone",
+    "public": true
+  },
+  "groupe": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "etablissement": {
+    "dataSource": "etablissementREST",
+    "public": true
+  },
+  "geocode": {
+    "dataSource": "geocodeREST",
     "public": true
   }
 }
