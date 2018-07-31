@@ -1,0 +1,14 @@
+{
+  "name": "geocode",
+  "plural": "geocodes",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
