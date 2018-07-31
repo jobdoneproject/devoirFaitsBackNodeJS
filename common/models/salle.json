@@ -13,7 +13,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "creneaux": {
+      "type": "hasMany",
+      "model": "creneau",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
