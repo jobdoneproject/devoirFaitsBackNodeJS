@@ -8,7 +8,16 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "salles": {
+      "type": "hasMany",
+      "model": "salle",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
