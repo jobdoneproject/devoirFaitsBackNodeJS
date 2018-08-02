@@ -32,9 +32,22 @@ L'api est bloquée pour les utilisateurs non authentifiés.
 * dans ma zone credentials copier le texte ci-dessous
 
         {
-            "email": "admin@admin.com",
+            "email": "admin@admin.fr",
             "password": "admin"
         }
+ * les deux autres utilisateurs sont aussi disponibles sans vérification des droits pour le moment : 
+        
+        Professeur (3B):
+        {
+                    "email": "professeur@mail.com",
+                    "password": "123"
+                }
+        
+        Elève (3B):
+         {
+                     "email": "0139eleve@mail.com",
+                     "password": "123"
+                 }       
 * cliquer sur try it out
 Reponse Body doit afficher quelquechose comme: 
 
