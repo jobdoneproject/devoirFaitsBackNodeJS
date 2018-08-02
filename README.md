@@ -49,7 +49,7 @@ L'api est bloquée pour les utilisateurs non authentifiés.
                      "password": "123"
                  }       
 * cliquer sur try it out
-Reponse Body doit afficher quelquechose comme: 
+Reponse Body doit afficher une réponse comme: 
 
         {
             "id": "MEKaO22nvuZ08a1Vs8zFieodTN8ZFeayMzSmAIpwpNTME6ibwBnoqQndvbglOIWT",
