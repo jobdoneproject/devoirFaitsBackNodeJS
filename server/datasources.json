@@ -49,8 +49,8 @@
       }
     ]
   },
-  "etablissementREST": {
-    "name": "etablissementREST",
+  "DataGovEducation": {
+    "name": "DataGovEducation",
     "crud": false,
     "connector": "rest",
     "debug": false,
@@ -65,9 +65,10 @@
       {
         "template": {
           "method": "GET",
-          "url": "https://data.education.gouv.fr/api/records/1.0/search/?dataset=fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre",
+          "url": "https://data.education.gouv.fr/api/records/1.0/search/",
           "query": {
-            "dataset": "{dataset}"
+            "dataset": "{dataset}",
+            "q": "{q}"
           },
           "options": {
             "strictSSL": true,
@@ -76,7 +77,10 @@
           "responsePath": "$.records.*"
         },
         "functions": {
-          "/": []
+          "/": [
+            "dataset",
+            "q"
+          ]
         }
       }
     ]

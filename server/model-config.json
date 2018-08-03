@@ -67,12 +67,20 @@
     "dataSource": "jobDone",
     "public": true
   },
-  "etablissement": {
-    "dataSource": "etablissementREST",
-    "public": true
-  },
   "geocode": {
     "dataSource": "geocodeREST",
+    "public": true
+  },
+  "educationNationale": {
+    "dataSource": "DataGovEducation",
+    "public": true
+  },
+  "Etablissement": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "userlog": {
+    "dataSource": "jobDone",
     "public": true
   }
 }
