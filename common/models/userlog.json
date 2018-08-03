@@ -1,0 +1,30 @@
+{
+  "name": "userlog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "userEmail": {
+      "type": "string",
+      "required": true
+    },
+    "logindatetime": {
+      "type": "date",
+      "required": true
+    },
+    "logoutdatetime": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
