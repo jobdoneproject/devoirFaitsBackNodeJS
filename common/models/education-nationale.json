@@ -1,6 +1,6 @@
 {
-  "name": "geocode",
-  "plural": "geocodes",
+  "name": "educationNationale",
+  "plural": "educationNationaleAPI",
   "base": "Model",
   "idInjection": true,
   "options": {

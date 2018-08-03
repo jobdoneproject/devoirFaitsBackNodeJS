@@ -1,27 +1,108 @@
 {
-  "name": "etablissement",
-  "plural": "etablissements",
-  "base": "Model",
+  "name": "Etablissement",
+  "plural": "Etablissements",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "localite_acheminement_uai": {
+      "type": "string",
+      "required": true
+    },
+    "secteur_public_prive_libe": {
+      "type": "string",
+      "required": true
+    },
+    "etat_etablissement": {
+      "type": "string",
+      "required": true
+    },
+    "libelle_region": {
+      "type": "string",
+      "required": true
+    },
+    "code_postal_uai": {
+      "type": "string",
+      "required": true
+    },
+    "numero_uai": {
+      "type": "string",
+      "required": true
+    },
+    "code_region": {
+      "type": "string",
+      "required": true
+    },
+    "epsg": {
+      "type": "string"
+    },
+    "nature_uai_libe": {
+      "type": "string"
+    },
+    "appellation_officielle": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "coordonnee_y": {
+      "type": "string"
+    },
+    "coordonnee_x": {
+      "type": "string"
+    },
+    "adresse_uai": {
+      "type": "string"
+    },
+    "code_commune": {
+      "type": "string"
+    },
+    "localisation": {
+      "type": "string"
+    },
+    "libelle_commune": {
+      "type": "string"
+    },
+    "code_departement": {
+      "type": "string"
+    },
+    "etat_etablissement_libe": {
+      "type": "string"
+    },
+    "nature_uai": {
+      "type": "string"
+    },
+    "libelle_departement": {
+      "type": "string"
+    },
+    "code_academie": {
+      "type": "string"
+    },
+    "appariement": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "patronyme_uai": {
+      "type": "string"
+    },
+    "denomination_principale": {
+      "type": "string"
+    },
+    "libelle_academie": {
+      "type": "string"
+    },
+    "position": {
+      "type": [
+        "geopoint"
+      ]
+    }
+  },
   "validations": [],
   "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {}
 }
