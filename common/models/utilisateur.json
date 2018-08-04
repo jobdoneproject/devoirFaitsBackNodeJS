@@ -39,9 +39,9 @@
   "validations": [],
   "relations": {
     "idEtablissement": {
-      "type": "hasMany",
-      "model": "etablissement",
-      "foreignKey": "idEtablissement",
+      "type": "belongsTo",
+      "model": "Etablissement",
+      "foreignKey": "numero_uai",
       "options": {
         "nestRemoting": true
       }

@@ -6,7 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "userName": {
+    "userFirstName": {
+      "type": "string",
+      "required": true
+    },
+    "userSirName": {
       "type": "string",
       "required": true
     },
@@ -18,8 +22,8 @@
       "type": "date",
       "required": true
     },
-    "logoutdatetime": {
-      "type": "date",
+    "actionType": {
+      "type": "string",
       "required": true
     }
   },
