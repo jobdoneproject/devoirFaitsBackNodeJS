@@ -2,11 +2,15 @@
   "name": "Etablissement",
   "plural": "Etablissements",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "numero_uai":{
+      "type": "string",
+      "id": true
+    },
     "localite_acheminement_uai": {
       "type": "string",
       "required": true
@@ -24,10 +28,6 @@
       "required": true
     },
     "code_postal_uai": {
-      "type": "string",
-      "required": true
-    },
-    "numero_uai": {
       "type": "string",
       "required": true
     },
@@ -102,7 +102,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "utilisateurs": {
+      "type": "hasMany",
+      "model": "utilisateur",
+      "foreignKey": "numero_uai",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
