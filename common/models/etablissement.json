@@ -118,6 +118,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "creneaux": {
+      "type": "hasMany",
+      "model": "creneau",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
