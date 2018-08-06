@@ -7,7 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "numero_uai":{
+    "numero_uai": {
       "type": "string",
       "id": true
     },
@@ -107,6 +107,14 @@
       "type": "hasMany",
       "model": "utilisateur",
       "foreignKey": "numero_uai",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "Salles": {
+      "type": "hasMany",
+      "model": "salle",
+      "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
