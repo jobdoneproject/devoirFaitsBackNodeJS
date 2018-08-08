@@ -51,10 +51,6 @@
     "dataSource": "jobDone",
     "public": true
   },
-  "classe": {
-    "dataSource": "jobDone",
-    "public": true
-  },
   "salle": {
     "dataSource": "jobDone",
     "public": true
