@@ -106,7 +106,7 @@
     "utilisateurs": {
       "type": "hasMany",
       "model": "utilisateur",
-      "foreignKey": "numero_uai",
+      "foreignKey": "numero-uai",
       "options": {
         "nestRemoting": true
       }
@@ -123,6 +123,14 @@
       "type": "hasMany",
       "model": "creneau",
       "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "classes": {
+      "type": "hasMany",
+      "model": "classe",
+      "foreignKey": "numero_uai",
       "options": {
         "nestRemoting": true
       }

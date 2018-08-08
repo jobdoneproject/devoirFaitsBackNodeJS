@@ -1,19 +1,28 @@
 {
   "name": "classe",
-  "plural": "classes",
+  "plural": "classe",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "nom": {
+    "nomClasse": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "utilisateurs": {
+      "type": "hasMany",
+      "model": "utilisateur",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
