@@ -69,7 +69,7 @@
   },
   "educationNationale": {
     "dataSource": "DataGovEducation",
-    "public": true
+    "public": false
   },
   "Etablissement": {
     "dataSource": "jobDone",
