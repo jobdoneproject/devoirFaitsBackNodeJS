@@ -28,7 +28,7 @@
       "required": true
     },
     "classeName": {
-      "type": "boolean",
+      "type": "string",
       "required": true
     },
     "actif": {
