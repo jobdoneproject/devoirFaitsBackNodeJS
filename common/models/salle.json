@@ -7,6 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
+    "idSalle": {
+      "generated": true,
+      "id": true,
+      "description": "Salle ID"
+    },
     "nom": {
       "type": "string",
       "required": true
