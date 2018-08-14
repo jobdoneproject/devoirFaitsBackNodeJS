@@ -8,9 +8,10 @@
   },
   "properties": {
     "idSalle": {
-      "generated": true,
-      "id": true,
-      "description": "Salle ID"
+      "type": {
+        "generated": true,
+        "id": true
+      }
     },
     "nom": {
       "type": "string",
