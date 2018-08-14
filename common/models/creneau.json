@@ -8,10 +8,8 @@
   },
   "properties": {
     "idCreneau": {
-      "type": {
         "id": true,
         "generated": true
-      }
     },
     "dateDebut": {
       "type": "number",
@@ -22,15 +20,11 @@
       "required": true
     },
     "professeursCreneau": {
-      "type": [
-        "number"
-      ],
+      "type": "object",
       "required": true
     },
     "elevesCreneau": {
-      "type": [
-        "number"
-      ],
+      "type": "object",
       "required": true
     }
   },
