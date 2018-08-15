@@ -26,10 +26,6 @@
     "elevesCreneau": {
       "type": "object",
       "required": true
-    },
-    "salle": {
-      "type": "object",
-      "required": true
     }
   },
   "validations": [],

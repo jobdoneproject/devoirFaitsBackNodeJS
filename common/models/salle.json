@@ -8,10 +8,8 @@
   },
   "properties": {
     "idSalle": {
-      "type": {
         "generated": true,
         "id": true
-      }
     },
     "nom": {
       "type": "string",
@@ -19,7 +17,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "salleCreneaux": {
+      "type": "hasMany",
+      "model": "creneau",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
