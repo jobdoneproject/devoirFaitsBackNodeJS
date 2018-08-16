@@ -8,10 +8,11 @@
   },
   "properties": {
     "idSalle": {
-        "generated": true,
-        "id": true
+      "type": "string",
+      "generated": true,
+      "id": true
     },
-    "nom": {
+    "nomSalle": {
       "type": "string",
       "required": true
     }
