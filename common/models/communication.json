@@ -1,0 +1,27 @@
+{
+  "name": "communication",
+  "plural": "communications",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idMessage": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "string",
+      "required": true
+    },
+    "date_message": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
