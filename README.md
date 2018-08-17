@@ -67,6 +67,13 @@ GET Etablissements
 
 La liste des établissements s'affiche dans le response Body (Non stocké en base mais appel dynamique d'une API et intégration avec Devoirs Faits)
 
-
-            
-    
+`De plus`            
+  * Modified ACL on all models:
+    * All is forbidden to anyone
+    * Etablissement is only authorized in READ
+    * Method findByID, for the moment is only authorized for admin users.
+    * Created three roles stored in the database
+        * admin
+        * eleve
+        * professeur
+          

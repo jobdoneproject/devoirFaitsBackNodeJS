@@ -41,7 +41,7 @@
   },
   "Role": {
     "dataSource": "jobDone",
-    "public": true
+    "public": false
   },
   "message": {
     "dataSource": "jobDone",
