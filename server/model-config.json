@@ -40,8 +40,8 @@
     }
   },
   "Role": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "jobDone",
+    "public": true
   },
   "message": {
     "dataSource": "jobDone",
@@ -80,6 +80,10 @@
     "public": true
   },
   "userlog": {
+    "dataSource": "jobDone",
+    "public": true
+  },
+  "communication": {
     "dataSource": "jobDone",
     "public": true
   }

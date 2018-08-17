@@ -9,8 +9,8 @@
   "properties": {
     "idSalle": {
       "type": "string",
-      "generated": true,
-      "id": true
+      "id": true,
+      "generated": true
     },
     "nomSalle": {
       "type": "string",
@@ -28,6 +28,13 @@
       }
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    }
+  ],
   "methods": {}
 }
