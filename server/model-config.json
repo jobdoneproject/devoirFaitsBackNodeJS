@@ -33,7 +33,7 @@
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "jobDone",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
