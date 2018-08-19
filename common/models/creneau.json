@@ -2,17 +2,15 @@
   "name": "creneau",
   "plural": "creneaux",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "idCreneau": {
-      "type": {
-        "id": true,
-        "generated": true
-      }
-    },
+      "type": "string",
+      "id": true
+      },
     "dateDebut": {
       "type": "number",
       "required": true
