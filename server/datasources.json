@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "jobDone": {
-    "host": "ds145881.mlab.com",
-    "port": 45881,
+    "host": "localhost",
+    "port": 27017,
     "database": "jobdone",
-    "password": "USERDBPWD13",
+    "password": "admin",
     "name": "jobDone",
-    "user": "USERDB",
+    "user": "admin",
     "connector": "mongodb"
   },
   "geocodeREST": {

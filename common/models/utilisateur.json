@@ -22,21 +22,25 @@
     },
     "ville": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "disponible": {
       "type": "boolean",
-      "required": true
+      "required": false
     },
     "classeName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "actif": {
       "type": "boolean",
       "required": true
     },
     "telephone": {
+      "type": "string",
+      "required": false
+    },
+    "numero_uai": {
       "type": "string",
       "required": false
     }

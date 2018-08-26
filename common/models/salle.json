@@ -2,15 +2,11 @@
   "name": "salle",
   "plural": "salles",
   "base": "PersistedModel",
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idSalle": {
-      "type": "string",
-      "id": true
-    },
     "nomSalle": {
       "type": "string",
       "required": true

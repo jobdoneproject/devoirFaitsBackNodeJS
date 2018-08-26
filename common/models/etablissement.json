@@ -11,6 +11,10 @@
       "type": "string",
       "id": true
     },
+    "type_etab": {
+      "type": "string",
+      "required": true
+    },
     "localite_acheminement_uai": {
       "type": "string",
       "required": true
@@ -111,10 +115,10 @@
         "nestRemoting": true
       }
     },
-    "Salles": {
+    "salles": {
       "type": "hasMany",
       "model": "salle",
-      "foreignKey": "",
+      "foreignKey": "_id",
       "options": {
         "nestRemoting": true
       }
