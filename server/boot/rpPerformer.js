@@ -33,9 +33,10 @@ async function rpexecuteAsync(modelMockaroTemplateUri) {
 }
 
 RpPerformer.prototype.rpexecute = async function(modelMockaroTemplateUri) {
+var Promise = require('bluebird');
 let info = await rpexecuteAsync(modelMockaroTemplateUri);
 console.log(info);
-return info = JSON.parse(info);
+return Promise.resolve(info);
 }
 
 RpPerformer.prototype.getContent = async function(url) {
