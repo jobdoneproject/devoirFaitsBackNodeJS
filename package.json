@@ -8,9 +8,12 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "debug": "node --nolazy --inspect-brk=9229 server/server.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.10.0",
@@ -19,6 +22,9 @@
     "loopback-component-explorer": "^6.0.0",
     "loopback-connector-mongodb": "^1.18.1",
     "loopback-connector-rest": "^3.2.0",
+    "node-pre-gyp": "^0.11.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },

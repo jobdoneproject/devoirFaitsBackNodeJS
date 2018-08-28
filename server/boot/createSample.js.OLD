@@ -1,6 +1,34 @@
 'use strict';
 
 module.exports = function(app) {
+  var Promise = require('bluebird');
+  var appServer = require('../../server/server');
+
+  var ds = app.dataSources.jobDone;
+  var Etablissement = app.models.Etablissement;
+
+  //var etabMarracq = Etablissement.find({where: {'id': '0640212H'}, limit: 1});
+  //var etabMarracq = Etablissement.find({ where: {id: '0640212H'} });
+  //var filter = {where: {n: {gt: 1}}, skip: 1, fields: ['n']};
+  // var filter = {where: {'id': '0640212H'}};
+  // var filtered = require('loopback-filters')(Etablissement, filter);
+  // var etabMarracq;
+  // perform any setup that requires the app object
+  // appServer.models.Etablissement.find(
+  // {where: {id: '0640212H'}},
+  // function(err, etab) {
+  //   if (err) return err;
+  //   // return callback(null, count);
+  //   etabMarracq = etab;
+  //   return etab;
+  // });
+  var etab = function() {
+    var et = Etablissement.find({where: {id: '0640212H'}}, function(err, etabMarracq) {
+      if (err) return err;
+      return Promise.resolve(etabMarracq);
+    });
+    return et;
+  };
   app.dataSources.jobDone.automigrate('salle', function(err) {
     if (err) throw err;
     app.models.salle.create([{
@@ -70,8 +98,7 @@ module.exports = function(app) {
     var User = app.models.User;
     var Role = app.models.Role;
     var RoleMapping = app.models.RoleMapping;
-    var Etablissement = app.models.Etablissement;
-    var etabMarracq = Etablissement.find({where: {numero_uai: '0640212H'}, limit: 1});
+
 
     app.models.Utilisateur.create([{
       nom: 'Labrador',
@@ -84,8 +111,8 @@ module.exports = function(app) {
       actif: false,
       telephone: '0672997809',
       email: 'admin@mail.com',
-      numero_uai: etabMarracq.numero_uai,
-      realm: etabMarracq.numero_uai,
+      numero_uai: etab.id,
+      realm: etab.id,
     },
     {
       nom: 'ENE-LEPLECITTI',
@@ -98,8 +125,8 @@ module.exports = function(app) {
       actif: false,
       telephone: '0686175496',
       email: 'eleve@mail.com',
-      numero_uai: etabMarracq.numero_uai,
-      realm: etabMarracq.numero_uai,
+      numero_uai: etab.id,
+      realm: etab.id,
     },
     {
       nom: 'BIEOT',
@@ -112,9 +139,9 @@ module.exports = function(app) {
       actif: false,
       telephone: '0686175496',
       email: 'professeur@mail.com',
-      numero_uai: etabMarracq.numero_uai,
-      realm: etabMarracq.numero_uai,
-    }], function(err, utilisateurs){
+      numero_uai: etab.id,
+      realm: etab.id,
+    }], function(err, utilisateurs) {
       if (err) throw err;
       var rolesfound = Role.count();
       if (!rolesfound) {
@@ -205,4 +232,5 @@ module.exports = function(app) {
     });
   }
   );
+  ds.disconnect();
 };
