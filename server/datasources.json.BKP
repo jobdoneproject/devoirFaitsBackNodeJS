@@ -1,0 +1,88 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "jobDone": {
+    "host": "ds145881.mlab.com",
+    "port": 45881,
+    "database": "jobdone",
+    "password": "USERDBPWD13",
+    "name": "jobDone",
+    "user": "USERDB",
+    "connector": "mongodb"
+  },  
+  "geocodeREST": {
+    "name": "geocodeREST",
+    "crud": false,
+    "connector": "rest",
+    "debug": false,
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "strictSSL": false
+    },
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://maps.googleapis.com/maps/api/geocode/{format=json}",
+          "query": {
+            "address": "{street},{city},{zipcode}",
+            "sensor": "{sensor=false}"
+          },
+          "options": {
+            "strictSSL": true,
+            "useQuerystring": true
+          },
+          "responsePath": "$.results[0].geometry.location"
+        },
+        "functions": {
+          "geocode": [
+            "street",
+            "city",
+            "zipcode"
+          ]
+        }
+      }
+    ]
+  },
+  "DataGovEducation": {
+    "name": "DataGovEducation",
+    "crud": false,
+    "connector": "rest",
+    "debug": false,
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "strictSSL": false
+    },
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "https://data.education.gouv.fr/api/records/1.0/search/",
+          "query": {
+            "dataset": "{dataset}",
+            "q": "{q}"
+          },
+          "options": {
+            "strictSSL": true,
+            "useQuerystring": true
+          },
+          "responsePath": "$.records.*"
+        },
+        "functions": {
+          "/": [
+            "dataset",
+            "q"
+          ]
+        }
+      }
+    ]
+  }
+}
